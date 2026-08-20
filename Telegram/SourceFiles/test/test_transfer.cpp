@@ -5,6 +5,8 @@ the official desktop application for the Telegram messaging service.
 For license and copyright information please follow this link:
 https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 */
+#ifdef _DEBUG
+
 #include "test/test_transfer.h"
 
 #include "data/data_document.h"
@@ -188,3 +190,22 @@ void NotifyDocumentLoadFailed(
 }
 
 } // namespace Test
+
+#else // _DEBUG
+
+#include "test/test_transfer.h"
+
+namespace Test {
+
+void NotifyDocumentSave(
+	not_null<DocumentData*>,
+	const QString &,
+	bool) {
+}
+
+void NotifyDocumentLoadFailed(not_null<DocumentData*>, bool) {
+}
+
+} // namespace Test
+
+#endif // _DEBUG
