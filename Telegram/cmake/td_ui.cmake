@@ -35,6 +35,7 @@ set(style_files
     boxes/share_box.style
     boxes/stickers_box.style
     boxes/url_auth_box_content.style
+    boxes/keys_legend.style
     info/community_requests/info_community_requests_widget.style
     settings/sections/settings_notifications.style
     ui/boxes/calendar_box.style
@@ -392,8 +393,6 @@ PRIVATE
     statistics/widgets/point_details_widget.cpp
     statistics/widgets/point_details_widget.h
 
-    ui/boxes/auto_delete_settings.cpp
-    ui/boxes/auto_delete_settings.h
     ui/boxes/boost_box.cpp
     ui/boxes/boost_box.h
     ui/boxes/calendar_box.cpp

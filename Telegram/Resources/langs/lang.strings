@@ -726,6 +726,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_shortcuts" = "Keyboard shortcuts";
 
 "lng_shortcuts_reset" = "Reset to default";
+"lng_shortcuts_reset_sure" = "Are you sure you want to reset all keyboard shortcuts to their default values?";
 "lng_shortcuts_recording" = "Recording...";
 "lng_shortcuts_add_another" = "Add another";
 
@@ -5259,6 +5260,12 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_url_auth_login_attempt" = "This login attempt came from the device above.";
 "lng_url_auth_allow_messages_label" = "Allow Messages";
 "lng_url_auth_allow_messages_about" = "This will allow {bot} to message you";
+"lng_url_auth_wallet_label" = "Wallet";
+"lng_url_auth_wallet_connect" = "Connect Wallet";
+"lng_url_auth_wallet_about" = "{bot} asks to connect your wallet to this site. The site will see your TON address, balance and activity, but can't move funds without your permission. Connecting signs a sign-in signature, not a transfer.";
+"lng_url_auth_wallet_no_key" = "This device doesn't hold the current key of this wallet. {link} to connect it.";
+"lng_url_auth_wallet_no_key_link" = "Restore the key";
+"lng_url_auth_wallet_reserved" = "Wallet access can't be granted to this site.";
 "lng_url_auth_phone_sure_title" = "Phone Number";
 "lng_url_auth_phone_sure_text" = "{domain} wants to access your phone number **{phone}**.\n\nAllow access?";
 "lng_url_auth_phone_sure_deny" = "Deny";
@@ -5454,6 +5461,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_context_edit_permissions" = "Edit admin rights";
 "lng_context_restrict_user" = "Restrict user";
 "lng_context_ban_user" = "Ban";
+"lng_context_unban_user" = "Unban";
+"lng_context_unban_done" = "User unbanned";
+"lng_context_unban_sure" = "Unban {user} in this group?";
 "lng_context_delete_and_ban" = "Delete and ban";
 "lng_context_remove_from_group" = "Remove from group";
 "lng_context_add_to_group" = "Add to group";
@@ -8024,6 +8034,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_photo_editor_keys_gesture_wheel" = "wheel";
 "lng_photo_editor_keys_wheel" = "Wheel";
 "lng_photo_editor_keys_middle_drag" = "Middle drag";
+"lng_photo_editor_keys_middle_click" = "Middle click";
 "lng_photo_editor_keys_double_click" = "Double click";
 "lng_photo_editor_keys_legend" = "Show these shortcuts";
 "lng_photo_editor_keys_crop" = "Crop";
@@ -8055,6 +8066,61 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_photo_editor_keys_timeline_window" = "Move trimmed range";
 
 "lng_photo_editor_link_customize" = "Customize Link Text";
+
+"lng_keys_legend_title" = "Shortcuts and gestures";
+
+"lng_keys_legend_section_general" = "General";
+"lng_keys_legend_section_chats" = "Chats list";
+"lng_keys_legend_section_messages" = "Messages";
+"lng_keys_legend_section_compose" = "Writing messages";
+"lng_keys_legend_section_media" = "Media viewer";
+"lng_keys_legend_section_fullscreen" = "Fullscreen video";
+"lng_keys_legend_section_iv" = "Instant View";
+
+"lng_keys_legend_pinned_chats" = "Open pinned chat by number";
+"lng_keys_legend_folder_numbers" = "Open folder by number";
+"lng_keys_legend_chat_switcher" = "Quick chat switcher";
+"lng_keys_legend_new_window" = "Open chat in a new window";
+"lng_keys_legend_quick_preview" = "Show a quick chat preview";
+"lng_keys_legend_extend_selection" = "Extend text selection";
+"lng_keys_legend_autoscroll" = "Autoscroll the chat";
+"lng_keys_legend_alt_text_select" = "Select text instead of opening links";
+"lng_keys_legend_edit_last" = "Edit the last message";
+"lng_keys_legend_reply_prev" = "Reply to previous message";
+"lng_keys_legend_reply_next" = "Reply to next message";
+"lng_keys_legend_attach" = "Attach a file";
+"lng_keys_legend_paste_plain" = "Paste as plain text";
+
+"lng_keys_legend_media_play" = "Play or pause";
+"lng_keys_legend_hold" = "Hold";
+"lng_keys_legend_click" = "Click";
+"lng_keys_legend_drag" = "Drag";
+"lng_keys_legend_wheel" = "Wheel";
+"lng_keys_legend_media_2x" = "2x speed";
+"lng_keys_legend_media_nav" = "Previous or next media";
+"lng_keys_legend_media_escape" = "Close the viewer";
+"lng_keys_legend_media_fullscreen_escape" = "Exit fullscreen";
+"lng_keys_legend_media_fullscreen" = "Toggle fullscreen video";
+"lng_keys_legend_media_seek" = "Seek backward or forward";
+"lng_keys_legend_media_pause" = "Pause or resume";
+"lng_keys_legend_media_frame" = "Frame-step while paused";
+"lng_keys_legend_media_percent" = "Jump to 0-90% of the video";
+"lng_keys_legend_media_flip" = "Flip the photo horizontally or vertically";
+"lng_keys_legend_media_zoom" = "Zoom in or out";
+"lng_keys_legend_media_zoom_reset" = "Reset zoom";
+"lng_keys_legend_media_save" = "Save media";
+"lng_keys_legend_media_fit" = "Fit to screen";
+"lng_keys_legend_media_double" = "Toggle fullscreen";
+"lng_keys_legend_media_hold" = "Speed up playback, drag to scrub the speed";
+"lng_keys_legend_media_chapter_prev" = "Previous chapter";
+"lng_keys_legend_media_chapter_next" = "Next chapter";
+
+"lng_keys_legend_iv_zoom" = "Zoom the page";
+"lng_keys_legend_iv_zoom_reset" = "Reset zoom";
+"lng_keys_legend_iv_search" = "Search the page";
+"lng_keys_legend_iv_close" = "Close Instant View";
+
+"lng_keys_legend_open" = "Show these shortcuts";
 
 "lng_voice_speed_slow" = "Slow";
 "lng_voice_speed_normal" = "Normal";
@@ -9174,6 +9240,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_folder_archive_failed" = "Failed to create archive.";
 "lng_folder_archive_status" = "ZIP archive";
+"lng_folder_archive_unpack" = "Unpack archive";
+"lng_folder_archive_pack" = "Pack into ZIP archive";
+"lng_folder_archive_pack_selected" = "Pack selected into ZIP archive";
+"lng_folder_archive_select" = "Select";
+"lng_folder_archive_deselect" = "Deselect";
 
 "lng_passcode_strength_empty" = "Passcode strength estimate.";
 "lng_passcode_strength_advice_short" = "Use at least 8 characters.";

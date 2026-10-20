@@ -4572,18 +4572,6 @@ void HistoryWidget::updateControlsVisibility() {
 	updateMouseTracking();
 }
 
-void HistoryWidget::hideFieldIfVisible() {
-	if (_field->isHidden() && _richDraftPreview->isHidden()) {
-		return;
-	} else if (Ui::InFocusChain(_field)) {
-		setFocus();
-	}
-	_field->hide();
-	_richDraftPreview->hide();
-	updateControlsGeometry();
-	update();
-}
-
 void HistoryWidget::showAboutTopPromotion() {
 	Expects(_history != nullptr);
 	Expects(_list != nullptr);
@@ -8120,14 +8108,6 @@ bool HistoryWidget::confirmSendingFiles(
 			}
 			return true;
 		}
-		if (overrideSendImagesAsPhotos == true
-			&& (Storage::ComputeMimeDataState(data)
-				== Storage::MimeDataState::FilesArchive)) {
-			auto list = Ui::PreparedList();
-			list.files.push_back(Storage::PrepareFilesArchive(urls));
-			confirmSendingFiles(std::move(list), QString());
-			return true;
-		}
 		auto list = Storage::PrepareMediaList(
 			urls,
 			st::sendMediaPreviewSize,
@@ -10731,12 +10711,6 @@ bool HistoryWidget::cancelReply(bool lastKeyboardUsed) {
 		}
 	}
 	return wasReply;
-}
-
-void HistoryWidget::cancelReplyAfterMediaSend(bool lastKeyboardUsed) {
-	if (cancelReplyOrSuggest(lastKeyboardUsed)) {
-		saveCloudDraft();
-	}
 }
 
 int HistoryWidget::countMembersDropdownHeightMax() const {
